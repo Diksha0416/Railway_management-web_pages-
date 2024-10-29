@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale:1.0">
+        <title>Feedback</title>
+        <style>
+            body{
+                background-image: url('https://wallpaperaccess.com/full/1461592.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                opacity:1;
+            }
+        p{
+            font-size:25px;
+            text-align:center;
+        }
+        h1{
+            font-size: 50px;
+            text-align:center;
+            text-shadow:2px 2px 2px black;
+        }
+        div{
+            background-color: rgba(255, 228, 196, 0.371);
+        }
+        input[type="submit"]{
+            width:65px;
+            height:40px;
+            border:2px solid black;
+            background-color: rgba(201, 162, 108, 0.726);
+            font-size:medium;
+        }
+        input[type="number"]{
+            border:2px solid black;
+            background-color: rgba(201, 162, 108, 0.726);
+            font-size:medium;
+        }
+        input[type="text"]{
+            border:2px solid black;
+            background-color: rgba(201, 162, 108, 0.726);
+            font-size:medium;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="./response recorded.html">
+        <table style="Width:100%">
+            <thead>
+             <tr>
+                <th>
+        <div>
+        <b>
+            <h1>Feedback</h1>
+        <p>Q. Does the system respond quickly and efficiently to user actions?
+            <br>
+            <input type="radio" name="option1" id="Yes">Yes
+            <input type="radio" name="option1" id="No">No
+        </p>
+        <p>Q. Have you experienced any performance issues, such as slow loading times or system crashes?
+            <br>
+            <input type="radio" name="option2" id="Yes">Yes
+            <input type="radio" name="option2" id="No">No
+        </p>
+        <p>Q. How would you rate the ticketing and reservation process in terms of ease of use and convenience?
+            <br>
+            <input type="radio" name="option3" id="VG">Very Good
+            <input type="radio" name="option3" id="G">Good
+            <input type="radio" name="option3" id="Avg">Average
+            <input type="radio" name="option3" id="B">Bad
+            <input type="radio" name="option3" id="VB">Very Bad
+        </p>
+        <p>Q. Do you find it easy to access and understand the real-time information within the system?
+            <br>
+            <input type="radio" name="option4" id="Yes">Yes
+            <input type="radio" name="option4" id="No">No
+        </p>
+        <p>Q. Are there any accessibility features that could be improved or added to make the system more inclusive?
+            <br>
+            <input type="text" name="add" id="add">
+        </p>
+        <p>Q.On a scale of 1 to 10, how satisfied are you with the railway management system overall?
+            <input type="number" name="rate" id="rate" min="1" max="10">
+        </p>
+        <p><input type="submit" name="sub" id="sub"></p>
+
+        <br>
+        </b>
+        </div>
+        </th>
+        </tr>
+        </thead>
+        </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale:1.0">
+        <title>Booking</title>
+        <style>
+            body{
+                background-image:url('https://th.bing.com/th/id/R.eb8afa95e34434419e49f4b4649f4d02?rik=18V%2fUf6b0NCM7w&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f180000%2fvelka%2ftrain-station-platform.jpg&ehk=nmRfRI8LVucPT9FkFWmJyL7BAb2j4czv3XL5noGjKx4%3d&risl=&pid=ImgRaw&r=0');
+                background-repeat:no-repeat;
+                background-size:cover;
+                display:grid;
+                justify-content: center;
+                align-items: center;
+                min-height:100vh;
+            }
+            i{
+                color:red;
+            }
+            .data{
+                width:500px;
+                height:400px;
+                background-color:rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                text-align:center;
+                font-size: large;
+                border:2px solid black;
+            }
+            .link{
+                width:250px;
+                height:200px;
+                background-color:rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                text-align:center;
+                font-size: 30px;
+                border:2px solid black;
+            }
+            input[type="submit"]{
+                background-color: rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                font-size: large;
+                width:80px;
+                height:40px;
+            }
+            input[type="reset"]{
+                background-color: rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                font-size: large;
+                width:80px;
+                height:40px;
+            }
+            a{
+                text-decoration: none;
+                color:rgb(0, 0, 151);
+            }
+            table{
+                width:110%;
+            }
+            @media screen and (max-width:500px)
+            {
+                body{
+                background-image:url('https://th.bing.com/th/id/R.eb8afa95e34434419e49f4b4649f4d02?rik=18V%2fUf6b0NCM7w&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f180000%2fvelka%2ftrain-station-platform.jpg&ehk=nmRfRI8LVucPT9FkFWmJyL7BAb2j4czv3XL5noGjKx4%3d&risl=&pid=ImgRaw&r=0');
+                background-repeat:no-repeat;
+                background-size:500px 900px;
+                display:grid;
+                justify-content: center;
+                align-items: center;
+                min-height:100vh;
+            }
+            table{
+                width:100%;
+            }
+            .data{
+                width:190px;
+                height:380px;
+                background-color:rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                text-align:center;
+                font-size:12px;
+                border:2px solid black;
+            }
+            .link{
+                width:100px;
+                height:140px;
+                background-color:rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                text-align:center;
+                font-size: 16px;
+                border:2px solid black;
+            }
+            input[type="submit"]{
+                background-color: rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                font-size: 15px;
+                width:60px;
+                height:40px;
+            }
+            input[type="reset"]{
+                background-color: rgba(255, 228, 196, 0.856);
+                border-radius:20%;
+                font-size: 15px;
+                width:60px;
+                height:40px;
+            }
+            select{
+                width:100px;
+            }
+            input[type="text"]{
+                width:120px;
+            }
+            input[type="number"]{
+                width:120px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>
+        <div class="data">
+            <form action="./ticket booked.html">
+                <br>
+        <h1>BOOK YOUR TICKET</h1>
+        <b>Select Your Trip<i>*</i>: </b><select><name="from" id="from" required>
+            <option value="">Select option</option>
+            <option value="ND to L">New Delhi to Lokmanyatilak</option>
+            <option value="JT to T">Jammu Tawi to Thane</option>
+            <option value="S to MCC">Surat to Mgr Chennai Ctl</option>
+            <option value="AJ to ND">Ahmedabad Jn to New Delhi</option>
+            <option value="H to OD">Howrah to Old Delhi</option>
+            <option value="AV to A">Anand Vihar to Ahmedabad</option>
+            <option value="LT to AJ">Lokmanyatilak T to Ahmedabad Jn</option>
+            <option value="CSMT to M">C Shivaji Mah T to Maninagar</option>
+            <option value="HJ to M">Howrah Jn to Manikpur</option>
+            <option value="S to AJ">Surat to Ahmedabad Jn</option>
+    </select>
+        <p><b>Name of Train<i>*</i>: </b><input type="text" name="to" id="to" required></p>
+        <p><b>Type of seat<i>*</i>: </b><input type="text" name="type" id="type" placeholder="-NONE-" required></p>
+        <p><b>Number of tickets:<i>*</i>: </b><input type="number" type="number" id="number" placeholder="-NONE-" required></p>
+        <p><b>Date<i>*</i>:</b><input type="date" name="Date" id="Date" required></p>
+        <p><input type="submit" name="submit" id="submit" required>
+        <input type="reset" name="res" id="res" required></p>
+        </form>
+        </div>
+        </th>
+        <th>
+            <div class="link">
+                <p><b>To check availability of trains click>> </b><a href="./trains avb 2.html"> Trains Available</a></p>
+            </div>
+        </th>
+        </thead>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Railway management system</title>
+    <style>
+        body
+        {
+            background-image:url('https://thecancunsun.com/wp-content/uploads/2021/03/Cancun-To-Tulum-Train-Begins-Construction.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity:1;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1
+        {
+            text-shadow:2px 2px 2px black;
+        }
+        hr{
+            border:1px solid black; 
+            background-color:black;
+        }
+        i
+        {
+            color:red;
+        }
+        fieldset{
+            border:2px solid black;
+            background-color: rgba(147, 118, 77, 0.377);
+        }
+        p b{
+            font-size:larger;
+        }
+        legend b{
+            font-size:larger;
+        }
+        input[type="submit"]{
+            width:65px;
+            height:30px;
+            border:2px solid black;
+            background-color: rgba(201, 162, 108, 0.726);
+            font-size:medium;
+        }
+        input[type="reset"]{
+            width:60px;
+            height:30px;
+            border:2px solid black;
+            background-color: rgba(201, 162, 108, 0.726);
+            font-size:medium;
+        }
+        a{
+            color:red;
+        }
+    </style>
+    </head>
+        <body>
+            <script>
+                 function ValidateForm() {
+                var fn=document.getElementById("fname").value;
+                var ln=document.getElementById('lname').value;    
+                var password = document.getElementById("password").value;
+                var confirmpassword = document.getElementById("cpassword").value;
+                var phone = document.getElementById("phone").value;
+
+                if (password == "") {
+                alert("Please enter your password");
+                return false;
+                }
+                if (password.length < 5) {
+                alert("Password length must be greater than 4");
+                return false;
+                }
+                if (password.length > 25) {
+                alert("Password length must be less than 25");
+                return false;
+                } 
+                if (confirmpassword !== password) {
+                alert("Password doesn't match");
+                return false;
+                }
+                if (phone.length !== 10) {
+                alert("Phone length must be of 10 digits");
+                return false;
+                }
+                    alert(fn +" "+ ln + "signed in. Your passowrd is " + password);
+            }
+            </script>
+            <form>
+                <fieldset>
+                <h1 style ="text-align:center;"><b>Sign Up</b></h1>
+                <p><b> First Name <i>*</i>:</b> <input type="text" name="fname" id="fname" required></p>
+                <p><b> Last Name  <i>*</i>:</b> <input type="text" name="lname" id="lname" required></p>
+                <p><b> Email id  <i>*</i>:</b><input type="email" id="email" name="email" placeholder="xyz@gmail.com" required></p>
+                <p><b> Password  <i>*</i>:</b><input type="password" name="password" id="password" required></p>
+                <p><b> Confirm Password  <i>*</i>:</b><input type="password" name="cpassword" id="cpassword" required></p>
+                <fieldset>
+                    <legend><b>Gender <i>*</i>:</b></legend>
+                    <p>
+                        Male<input type="radio" name="gender" id="male" required>
+                        Female<input type="radio" name="gender" id="female" required>
+                        Other<input type="radio" name="gender" id="other" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Marital status <i>*</i>:</b></legend>
+                    <p>
+                        Married<input type="radio" name="status" id="status" required>
+                        Unmarried<input type="radio" name="status" id="status" required>
+                    </p>
+                </fieldset>
+                <p>
+                <b>Date of birth  <i>*</i>:</b><input type="date" name="date" id="date"  required>
+                </p>
+                <p>
+                <b>Contact number  <i>*</i>:</b><input type="number" name="phone" id="phone" placeholder="9876543210" required>
+                </p>
+                <p>
+                <b>Selective question  <i>*</i>:</b><select id="question" name="question" required>
+                    <option value="">Select option</option>
+                    <option value="pets">What is the name of your pet?</option>
+                    <option value="school">What is your school's name?</option>
+                    <option value="name">What is your nickname?</option>
+                    </select>
+                </p>
+                <p> 
+                <b> Answer  <i>*</i>:</b> <input type="text" name="answer" id="answer" required> 
+                </p>
+                <hr>
+                <p style="text-align:center;"><input type="submit" name="submit" onclick="ValidateForm()" id="submit">
+                <input type="reset" name="reset" id="reset"></p>
+                <b><p style="font-size:20px">After signing up you can go back to <a href="./index.html">Home</a></p></b>
+            </fieldset>
+            </form>
+        </body>
+</html>
