@@ -15,7 +15,6 @@ Welcome to the Railway Management System! This project aims to simplify train op
   - [Feedback](#feedback)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## 🌟 Project Overview
 
